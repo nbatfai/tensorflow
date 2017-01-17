@@ -90,10 +90,10 @@ def main(_):
     
     #niter =  100000
     #batch_size =  10    
-    #niter = 100000
-    #batch_size = 100
-    niter =100000
-    batch_size =1000
+    niter = 100000
+    batch_size = 100
+    #niter =100000
+    #batch_size =1000
     #niter =  100000
     #batch_size =  10000    
         
@@ -117,7 +117,7 @@ def main(_):
       pinfoaccsum = pinfoaccsum + pinfoacc	
       accsum = accsum + acc	
     print("--     Acc: ", acc/niter)
-    print("-- InfoAcc: ", pinfoaccsum/niter)
+    print("-- InfoAcc: ", pinfoaccsum/niter, " bit")
     print("----------------------------------------------------------")
     train_writer.close()
 
@@ -126,7 +126,7 @@ def main(_):
     summary, acc, pinfoacc = sess.run([merged, accuracy, infoacc], feed_dict={batchsize: 10000, x: mnist.test.images, y_: mnist.test.labels})  
     test_writer.add_summary(summary)
     print("--     Acc: ", acc)
-    print("-- InfoAcc: ", pinfoacc)
+    print("-- InfoAcc: ", pinfoacc, " bit")
     print("----------------------------------------------------------")
     test_writer.close()    
   
