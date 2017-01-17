@@ -8,7 +8,8 @@ This paper is a part of the [ESAMU](https://github.com/nbatfai/SamuEntropy) rese
 ## Some Running Results
 
 batch size = 1000
-'''
+
+```
 nbatfai@robopsy:~/Robopsychology/forkedrepos/tensorflow/tensorflow/examples/tutorials/mnist$ python mnist_softmax_esmu.py 
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so.8.0 locally
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so.5 locally
@@ -49,10 +50,11 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow devi
 -- InfoAcc:  2.55959  bit
 ----------------------------------------------------------
 
-'''
+```
 
 batch size = 1000
-'''
+
+```
 nbatfai@robopsy:~/Robopsychology/forkedrepos/tensorflow/tensorflow/examples/tutorials/mnist$ python mnist_softmax_esmu.py 
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so.8.0 locally
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so.5 locally
@@ -93,10 +95,11 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow devi
 -- InfoAcc:  2.5599  bit
 ----------------------------------------------------------
 
-'''
+```
 
 batch size = 100
-'''
+
+```
 nbatfai@robopsy:~/Robopsychology/forkedrepos/tensorflow/tensorflow/examples/tutorials/mnist$ python mnist_softmax_esmu.py 
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so.8.0 locally
 I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so.5 locally
@@ -135,6 +138,6 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow devi
 --     Acc:  0.9244
 -- InfoAcc:  2.55578  bit
 ----------------------------------------------------------
-'''
+```
 
 
